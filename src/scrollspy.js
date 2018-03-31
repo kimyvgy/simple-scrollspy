@@ -10,7 +10,7 @@ export class ScrollSpy {
 
         let defaultOptions = {
             offset: 0,
-            menuItemClass: 'li > a',
+            menuActiveTarget: 'li > a',
             sectionClass: '.scrollspy',
             activeClass: 'active',
         }
