@@ -1,6 +1,7 @@
 # Simple Scrollspy
 
-Simple scrollspy without jQuery, no dependencies and lightweight. Only 1.94Kb.
+[Simple scrollspy](https://huukimit.github.io/simple-scrollspy) is lightweight javascript library without jQuery, no dependencies. Only 1.94Kb.
+This is a [demo](https://huukimit.github.io/simple-scrollspy/demo).
 
 ## Install
 You can install by `npm` or download inject `simple-scrollspy.js` file into your HTML code:
@@ -47,3 +48,11 @@ Or:
 | `menuActiveTarget` | String | `li > a` | Element will be added active class |
 | `sectionClass` | String | `.scrollspy` | Query selector to your sections |
 | `activeClass` | String | `active` | Active class name |
+
+## Helpful links
+- [Documentation](https://huukimit.github.io/simple-scrollspy)
+- [Example](https://huukimit.github.io/simple-scrollspy/demo)
+- [See on NPM package](https://www.npmjs.com/package/simple-scrollspy)
+
+## Licence
+[MIT](./LICENSE)

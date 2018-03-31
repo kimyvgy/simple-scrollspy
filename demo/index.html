@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Scrollspy</title>
+    <style>
+        body {
+            margin: 0;
+            background: #efefef;
+            line-height: 1.5;
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        section {
+            padding-bottom: 1rem;
+            border-bottom: solid 1px #333333;
+        }
+
+        section:first-child {
+            padding-top: 5rem;
+        }
+
+        section:last-child {
+            padding-bottom: 5rem;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: cadetblue;
+            width: 100%;
+            box-shadow: 0 0 13px 0 rgb(0, 0, 0);
+        }
+
+        .menu {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu__item {
+            display: block;
+        }
+
+        .menu__item a {
+            text-decoration: none;
+            color: rgba(255,255,255, 0.6);
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .menu__item a.active {
+            color: #ff7600;
+            font-weight: bolder;
+        }
+
+        .title {
+            font-size: 3rem;
+            color: inherit;
+        }
+
+        p, ul {
+            font-size: 1.6rem;
+        }
+
+        section:nth-of-type(odd) p, section:nth-of-type(odd) li {
+            color: red;
+        }
+
+        section:nth-of-type(even) p, section:nth-of-type(even) li {
+            color: blue;
+        }
+
+        code, pre {
+            display: block;
+            font-size: 1.6rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        td, th {
+            padding: 1rem;
+        }
+
+        th {
+            background: cadetblue;
+            color: white;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="https://github.com/huukimit/simple-scrollspy">
+        <img
+            style="position: fixed; z-index: 100;top: 0; right: 0; border: 0;"
+            src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+            alt="Simple Scrollspy"
+        />
+    </a>
+    <section class="scrollspy" id="home">
+        <nav class="navigation">
+            <ul id="menu" class="menu">
+                <li class="menu__item">
+                    <a href="#home" class="active" data-scrollspy="#home">Simple Scrollspy</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#install" data-scrollspy="#install">Install</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#usages" data-scrollspy="#usages">Usages</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#arguments" data-scrollspy="#arguments">Arguments</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#license" data-scrollspy="#license">License</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <h1 class="title">Simple Scrollspy</h1>
+            <p>
+                Simple scrollspy without jQuery, no dependencies and lightweight. Only 1.94Kb. <br>
+                This is a <a href="">demo</a>
+            </p>
+        </div>
+    </section>
+    <section class="scrollspy" id="install">
+        <h3 class="title">Install</h3>
+        <p>
+            You can install by npm or download inject simple-scrollspy.js file into your HTML code:
+        </p>
+        <p>
+            <code>
+                npm install simple-scrollspy
+            </code>
+            <code>
+                &#x3C;script src=&#x22;/path/to/dist/simple-scrollspy.js&#x22;&#x3E;&#x3C;/script&#x3E;
+            </code>
+        </p>
+    </section>
+    <section class="scrollspy" id="usages">
+        <h3 class="title">Usages</h3>
+        <p>
+        <pre>
+import scrollSpy from &#x27;simple-scrollspy&#x27;
+
+scrollSpy(&#x27;#menu-list&#x27;, {
+    offset: 100,
+    menuActiveTarget: &#x27;.menu__item &#x3E; a&#x27;,
+    sectionClass: &#x27;body section.scrollspy&#x27;,
+    activeClass: &#x27;active&#x27;
+})
+</pre>
+        </p>
+        <p>
+        <pre>
+&#x3C;script src=&#x22;/path/to/dist/simple-scrollspy.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script&#x3E;
+    window.onload = function () {
+        scrollSpy(&#x27;#menu-list&#x27;, {
+            offset: 100,
+            menuActiveTarget: &#x27;.menu__item &#x3E; a&#x27;,
+            sectionClass: &#x27;body section.scrollspy&#x27;,
+            activeClass: &#x27;active&#x27;
+        })
+    }
+&#x3C;/script&#x3E;
+</pre>
+        </p>
+    </section>
+    <section class="scrollspy" id="arguments">
+        <h3 class="title">Arguments</h3>
+        <p>
+        <ul>
+            <li>
+                The first argument is your menu list selector. Type of String|HTMLElement.
+            </li>
+            <li>
+                The second argument is optional. Type of Object:
+            </li>
+        </ul>
+        </p>
+        <div>
+            <table border="1" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>offset</td>
+                    <td>Number</td>
+                    <td>0</td>
+                    <td>Offset number</td>
+                </tr>
+                <tr>
+                    <td>menuActiveTarget</td>
+                    <td>String</td>
+                    <td>li > a</td>
+                    <td>Element will be added active class</td>
+                </tr>
+                <tr>
+                    <td>sectionClass</td>
+                    <td>String</td>
+                    <td>.scrollspy</td>
+                    <td>Query selector to your sections</td>
+                </tr>
+                <tr>
+                    <td>activeClass</td>
+                    <td>String</td>
+                    <td>active</td>
+                    <td>Active class name</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="scrollspy" id="license">
+        <h3 class="title">License</h3>
+        <p>MIT License</p><br>
+
+        <p>Copyright (c) 2018 Kim Nguyen Huu</p><br>
+
+        <p>
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:
+        </p>
+
+        <p>
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+        </p>
+
+        <p>
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+        </p>
+
+        <code style="text-align: center;">
+            Nguyen Huu Kim &#x3C;kimnguyen.ict@gmail.com&#x3E;
+        </code>
+    </section>
+</div>
+
+<script src="../dist/simple-scrollspy.js"></script>
+<script>
+    window.onload = function () {
+        scrollSpy('#menu', {
+            offset: 100,
+            menuActiveTarget: '.menu__item > a',
+            sectionClass: '.scrollspy',
+            activeClass: 'active',
+        })
+    }
+</script>
+</body>
+</html>
