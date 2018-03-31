@@ -1,0 +1,30 @@
+{
+  "name": "simple-scrollspy",
+  "version": "1.0.0",
+  "description": "Simple scrollspy javascript without jQuery, no dependencies.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
+    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huukimit/simple-scrollspy.git"
+  },
+  "keywords": [
+    "scrollspy",
+    "scroll",
+    "umd"
+  ],
+  "author": "Nguyen Huu Kim <kimnguyen.ict@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huukimit/simple-scrollspy/issues"
+  },
+  "homepage": "https://github.com/huukimit/simple-scrollspy#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
+}

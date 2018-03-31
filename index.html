@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Scrollspy</title>
+    <style>
+        body {
+            margin: 0;
+            background: #efefef;
+            line-height: 1.5;
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        section {
+            padding-top: 5rem;
+            padding-bottom: 1rem;
+            border-bottom: solid 1px #333;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: cadetblue;
+            width: 100%;
+            box-shadow: 0 0 13px 0 rgb(0, 0, 0);
+        }
+
+        .menu {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu__item {
+            display: block;
+        }
+
+        .menu__item a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .menu__item a.active {
+            color: black;
+        }
+
+        .title {
+            font-size: 3rem;
+            color: inherit;
+        }
+
+        p {
+            font-size: 1.6rem;
+            min-height: 50vh;
+        }
+
+        section:nth-of-type(odd) p {
+            color: red;
+        }
+
+        section:nth-of-type(even) p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <section class="scrollspy" id="home">
+        <nav class="navigation">
+            <ul id="menu" class="menu">
+                <li class="menu__item">
+                    <a href="#home" class="active" data-scrollspy="#home">Homepage</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#post" data-scrollspy="#post">Post</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#blog" data-scrollspy="#blog">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about-me" data-scrollspy="#about-me">About me</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <h3 class="title">Homepage</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur id nulla recusandae vel! Autem
+                cupiditate dignissimos distinctio dolores error est ex fuga, fugit hic illo ipsa iusto laboriosam
+                molestias numquam quidem reiciendis reprehenderit sequi velit? Accusamus ad adipisci animi aspernatur
+                atque doloremque enim esse et ex explicabo harum labore modi natus necessitatibus odit, porro qui quos
+                rem saepe sequi, soluta veritatis voluptatem voluptatum. Deserunt eaque et, eveniet id itaque laborum
+                nemo quaerat quia quisquam quos rerum soluta tenetur, totam vero vitae. Delectus distinctio dolores,
+                ducimus eius eos, est expedita facere illo ipsa nobis officia quasi rerum sunt, tempore voluptas
+                voluptatem?
+            </p>
+        </div>
+    </section>
+    <section class="scrollspy" id="post">
+        <h3 class="title">Post</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur atque dolore dolores explicabo
+            fuga fugiat id, impedit quo reiciendis? Deserunt dolorem ducimus esse hic magnam, pariatur similique
+            voluptatibus. Accusantium aut consequatur, debitis deleniti dicta dolore doloribus ducimus ea eius eos
+            exercitationem facere fugiat, impedit ipsa iste iusto laudantium maxime molestiae mollitia natus non officia
+            omnis optio possimus praesentium quaerat quidem quis, quisquam quod ratione saepe tempore totam voluptates?
+            Aliquam, blanditiis deserunt doloremque eligendi esse, eum facere laboriosam nobis sed sit velit voluptates?
+            Accusantium architecto asperiores atque consectetur delectus distinctio, doloribus ducimus enim error harum
+            ipsam ipsum iste iure laudantium minus officia optio perferendis qui quod repellendus rerum temporibus vel
+            voluptatum? Aliquam amet animi autem blanditiis ducimus eaque eligendi eos esse est eveniet facilis id illo
+            inventore itaque magnam maxime necessitatibus nesciunt possimus praesentium repudiandae, sint, soluta ullam
+            voluptatum. Aperiam architecto aspernatur beatae doloremque eveniet ex explicabo impedit incidunt
+            laboriosam, neque nostrum quaerat quia repellendus soluta sunt! A explicabo iste iusto, placeat quidem
+            tenetur. Architecto at doloribus esse fugit incidunt neque nesciunt nisi porro repellat sunt. Accusantium
+            aliquam amet assumenda blanditiis consequatur distinctio eligendi, exercitationem in ipsa nam necessitatibus
+            perspiciatis quibusdam quo reprehenderit sed sequi similique, suscipit vero voluptates voluptatibus.
+        </p>
+    </section>
+    <section class="scrollspy" id="blog">
+        <h3 class="title">Blog</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, culpa dolorem doloribus, est
+            impedit necessitatibus odit quia, quidem repellat saepe voluptate? A ad alias aliquam consequuntur
+            dignissimos dolorem ea eaque eius enim eveniet fugiat id illo in inventore ipsum libero magnam molestias
+            mollitia nihil numquam omnis optio quasi quis recusandae, repellendus totam vero vitae voluptas voluptatibus
+            voluptatum! A architecto asperiores consequuntur deleniti ducimus error inventore maiores nesciunt, nulla
+            obcaecati possimus qui rerum sit temporibus ullam, veniam voluptas. Adipisci architecto at commodi
+            consequuntur corporis delectus deleniti, dolorum eaque eius et eveniet explicabo facere fuga in iure laborum
+            magni maiores, minima minus molestias mollitia natus numquam obcaecati omnis placeat quam quis, ratione
+            reiciendis repellat saepe sequi similique sit totam voluptas voluptatem voluptatibus voluptatum? Aspernatur
+            cum obcaecati odio quasi quo temporibus. Consequatur delectus dolores facere fuga in ipsum iure labore
+            laborum libero minus modi nam optio porro possimus quasi quo tempora tempore, voluptatem? Accusamus
+            architecto, at aut autem beatae delectus dolor eum fugiat hic nam nihil obcaecati perspiciatis porro quam
+            quasi qui quibusdam recusandae soluta! Ad aliquid architecto assumenda at atque beatae delectus deserunt
+            dolor, eius et facere, fugiat incidunt iure magni nemo nobis numquam officia possimus quia reprehenderit
+            tempora tenetur voluptatibus.
+        </p>
+    </section>
+    <section class="scrollspy" id="about-me">
+        <h3 class="title">About me</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam aspernatur beatae
+            consectetur culpa deleniti eum, incidunt libero maxime natus odio placeat possimus quae sit, sunt tenetur!
+            Amet architecto cumque deleniti, dicta dolore doloribus enim ex expedita incidunt inventore, maiores
+            nesciunt pariatur quos reiciendis repudiandae velit voluptate. Cupiditate delectus dicta facere illum
+            impedit ipsum iure nihil rem. Ab accusantium aliquid aperiam architecto consequatur cumque delectus
+            dignissimos dolorem dolores ea, eaque eius et eum excepturi expedita hic illo laboriosam laborum molestiae
+            nemo nobis nulla placeat quidem quod sapiente sint soluta sunt tenetur totam unde veniam vitae voluptates
+            voluptatibus! Accusantium asperiores, commodi cupiditate dicta doloribus ea eveniet fugiat harum in odio
+            perspiciatis totam veniam vero! Nostrum quaerat vitae voluptas! Aperiam, delectus earum eius eos ex id
+            impedit, nihil nostrum optio perspiciatis porro quaerat qui repellendus repudiandae temporibus. Ad aliquam
+            cum dolores dolorum fugit, in incidunt, obcaecati officiis quam quasi quidem tempore veniam voluptatibus.
+            Accusantium commodi consequuntur dolor ea iure, modi natus nobis placeat provident repudiandae veniam
+            voluptatibus. Ad atque, cumque inventore labore minus pariatur tenetur ut? Ab at atque dolor dolore eaque
+            earum exercitationem hic, ipsam ipsum necessitatibus perspiciatis reiciendis vero voluptates. A ab beatae
+            dolore eveniet explicabo itaque nesciunt voluptas?
+        </p>
+    </section>
+</div>
+
+<script src="/dist/simple-scrollspy.js"></script>
+<script>
+    window.onload = function () {
+        scrollSpy('#menu', {
+            offset: 100,
+            menuActiveTarget: '.menu__item > a',
+            sectionClass: '.scrollspy',
+            activeClass: 'active',
+        })
+    }
+</script>
+</body>
+</html>
