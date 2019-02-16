@@ -9,6 +9,8 @@ This is a [scrollspy demo](https://huukimit.github.io/simple-scrollspy/demo) for
 ## Install
 1. Via NPM:
 
+Install NPM package - https://www.npmjs.com/package/simple-scrollspy:
+
 ```npm
 npm install simple-scrollspy
 ```
