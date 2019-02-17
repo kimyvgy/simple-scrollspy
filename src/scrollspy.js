@@ -25,11 +25,14 @@ export class ScrollSpy {
     const section = this.getSectionInView()
     const menuItem = this.getMenuItemBySection(section)
 
-    this.removeCurrentActive({ ignore: menuItem })
-    this.setActive(menuItem)
+    if (menuItem) {
+      this.removeCurrentActive({ ignore: menuItem })
+      this.setActive(menuItem)
+    }
   }
 
   getMenuItemBySection(section) {
+    if (!section) return
     const sectionId = section.getAttribute('id')
     return this.menuList.querySelector(`[${this.options.hrefAttribute}="#${sectionId}"]`)
   }
