@@ -91,6 +91,10 @@ $ yarn install
 $ yarn dev
 ```
 
+## Note
+- Let feel free to make a pull request if you can. Or just create the issues when you got it.
+- Don't forget give it a star if you feels it is really helpfull for us. It may save somebody in someday.
+
 ## Helpful links
 - [Documentation](https://huukimit.github.io/simple-scrollspy)
 - [Example](https://huukimit.github.io/simple-scrollspy/demo)
