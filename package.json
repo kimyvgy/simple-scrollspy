@@ -19,9 +19,9 @@
   "author": "Nguyen Huu Kim <kimnguyen.ict@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huukimit/simple-scrollspy/issues"
+    "url": "https://github.com/kimyvgy/simple-scrollspy/issues"
   },
-  "homepage": "https://github.com/huukimit/simple-scrollspy#readme",
+  "homepage": "https://kimyvgy.github.io/simple-scrollspy/demo",
   "devDependencies": {
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.4.1",
