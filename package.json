@@ -12,9 +12,9 @@
     "url": "git+https://github.com/huukimit/simple-scrollspy.git"
   },
   "keywords": [
-    "scrollspy",
     "scroll",
-    "umd"
+    "scrollspy",
+    "menuspy"
   ],
   "author": "Nguyen Huu Kim <kimnguyen.ict@gmail.com>",
   "license": "MIT",
