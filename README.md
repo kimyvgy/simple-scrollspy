@@ -1,10 +1,10 @@
 # Simple Scrollspy
 
-[Simple scrollspy](https://huukimit.github.io/simple-scrollspy) is a lightweight javascript library without jQuery,
+[Simple scrollspy](https://kimyvgy.github.io/simple-scrollspy) is a lightweight javascript library without jQuery,
 no dependencies. It is used to make scrollspy effect for your menu, table of contents, etc.
 Only 1.94Kb.
 
-This is a [scrollspy demo](https://huukimit.github.io/simple-scrollspy/demo) for my menu in the navigation bar.
+This is a [scrollspy demo](https://kimyvgy.github.io/simple-scrollspy/demo) for my menu in the navigation bar.
 
 ## Install
 1. Via NPM:
@@ -96,8 +96,8 @@ $ yarn dev
 - Don't forget give it a star if you feels it is really helpfull for us. It may save somebody in someday.
 
 ## Helpful links
-- [Documentation](https://huukimit.github.io/simple-scrollspy)
-- [Example](https://huukimit.github.io/simple-scrollspy/demo)
+- [Documentation](https://kimyvgy.github.io/simple-scrollspy)
+- [Example](https://kimyvgy.github.io/simple-scrollspy/demo)
 - [See on NPM package](https://www.npmjs.com/package/simple-scrollspy)
 
 ## Licence
