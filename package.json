@@ -23,8 +23,8 @@
   },
   "homepage": "https://kimyvgy.github.io/simple-scrollspy/demo",
   "devDependencies": {
-    "uglifyjs-webpack-plugin": "^1.2.4",
+    "terser-webpack-plugin": "^2.3.1",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^3.3.10"
   }
 }
