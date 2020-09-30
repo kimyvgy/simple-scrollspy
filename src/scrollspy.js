@@ -13,12 +13,26 @@ export class ScrollSpy {
       menuActiveTarget: 'li > a',
       offset: 0,
       hrefAttribute: 'href',
-      activeClass: 'active'
+      activeClass: 'active',
+      scrollContainer: ''
     }
 
     this.menuList = menu instanceof HTMLElement ? menu : document.querySelector(menu)
     this.options = Object.assign({}, defaultOptions, options)
+    
+    if(this.options.scrollContainer) {
+      this.scroller = this.options.scrollContainer instanceof HTMLElement ? this.options.scrollContainer : document.querySelector(this.options.scrollContainer)
+    } else {
+      this.scroller = window
+    }
+
     this.sections = document.querySelectorAll(this.options.sectionClass)
+    
+    this.listen();
+  }
+
+  listen() {
+    this.scroller.addEventListener('scroll', () => this.onScroll())
   }
 
   onScroll() {
@@ -41,7 +55,12 @@ export class ScrollSpy {
     for (let i = 0; i < this.sections.length; i++) {
       const startAt = this.sections[i].offsetTop
       const endAt = startAt + this.sections[i].offsetHeight
-      const currentPosition = (document.documentElement.scrollTop || document.body.scrollTop) + this.options.offset
+      let currentPosition = (document.documentElement.scrollTop || document.body.scrollTop) + this.options.offset
+
+      if(this.options.scrollContainer) {
+        currentPosition = (this.scroller.scrollTop) + this.options.offset
+      }
+
       const isInView = currentPosition > startAt && currentPosition <= endAt
       if (isInView) return this.sections[i]
     }
