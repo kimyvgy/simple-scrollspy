@@ -91,6 +91,16 @@ $ yarn install
 $ yarn dev
 ```
 
+## Build
+```bash
+$ yarn build
+```
+or:
+```npm
+$ npm run build
+```
+The `dist` folder is automatically created and include file `simple-scrollspy.min.js`
+
 ## Note
 - Let feel free to make a pull request if you can. Or just create the issues when you got it.
 - Don't forget give it a star if you feels it is really helpfull for us. It may save somebody in someday.
