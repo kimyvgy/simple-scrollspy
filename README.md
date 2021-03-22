@@ -36,20 +36,21 @@ If you are giving it a try, make sure that you:
     Example: `<section id="first-section">...</section>`
 3. Added an attribute which is an section ID into your menu items. Default is `href`.
     Example: `"href"="#first-section"`.
-You also replace `href` with the other name by `hrefAttribute` in `options`. 
+You also replace `href` with the other name by `hrefAttribute` in `options`.
 
 ### Arguments
 
 1. The `menuElement` is query selector to your menu. It is `String` or `HTMLElement` instance.
 2. The `options` is optional. It is type of `Object` which contains properties below:
 
-| Name               | Type     | Default       | Description                        |
-|--------------------|:---------|:--------------|:-----------------------------------|
-| `sectionClass`     | String   | `.scrollspy`  | Query selector to your sections    |
-| `menuActiveTarget` | String   | `li > a`      | Element will be added active class |
-| `offset`           | Number   | 0             | Offset number                      |
-| `hrefAttribute`    | String   | `href`        | The menu item's attribute name which contains section ID |
-| `activeClass`      | String   | `active`      | Active class name will be added into `menuActiveTarget`|
+| Name               | Type               | Default       | Description                        |
+|--------------------|:-------------------|:--------------|:-----------------------------------|
+| `sectionClass`     | String             | `.scrollspy`  | Query selector to your sections    |
+| `menuActiveTarget` | String             | `li > a`      | Element will be added active class |
+| `offset`           | Number             | 0             | Offset number                      |
+| `hrefAttribute`    | String             | `href`        | The menu item's attribute name which contains section ID |
+| `activeClass`      | String             | `active`      | Active class name will be added into `menuActiveTarget`|
+| `scrollContainer`  | String|HTMLElement | empty string  | User Defined Scrolling Container |
 
 ### ES6 example
 
@@ -57,9 +58,10 @@ You also replace `href` with the other name by `hrefAttribute` in `options`.
 import scrollSpy from 'simple-scrollspy'
 
 const options = {
-    sectionClass: '.scrollspy',     // Query selector to your sections
-    menuActiveTarget: '.menu-item', // Query selector to your elements that will be added `active` class
-    offset: 100                     // Menu item will active before scroll to a matched section 100px
+    sectionClass: '.scrollspy',           // Query selector to your sections
+    menuActiveTarget: '.menu-item',       // Query selector to your elements that will be added `active` class
+    offset: 100,                          // Menu item will active before scroll to a matched section 100px
+    scrollContainer: '.scroll-container', // Listen scroll behavior on `.scroll-container` instead of `window`
 }
 
 // init:
@@ -78,7 +80,7 @@ scrollSpy('#main-menu', options)
         scrollSpy('#main-menu', {
             sectionClass: '.scrollspy',
             menuActiveTarget: '.menu-item',
-            offset: 100
+            offset: 100,
         })
     }
 </script>
