@@ -1,6 +1,20 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See standard-version for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.1.0](https://github.com/kimyvgy/simple-scrollspy/compare/v2.0.3...v2.1.0) (2021-03-22)
+
+
+### Features
+
+* adding some functionality for allowing user to define a scrollContainer ([#17](https://github.com/kimyvgy/simple-scrollspy/issues/17)) ([31e39d7](https://github.com/kimyvgy/simple-scrollspy/commit/31e39d76d1e2b5adf5b5ea8dd2da7ae32ea59a97))
+
+
+### Bug Fixes
+
+* [#12](https://github.com/kimyvgy/simple-scrollspy/issues/12) Custom active class not removed for previously selected menu items ([#13](https://github.com/kimyvgy/simple-scrollspy/issues/13)) ([1cec086](https://github.com/kimyvgy/simple-scrollspy/commit/1cec0860e4e33cdda6f34322e18402e51129e224))
+* defining non-existing 'scrollContainer' will work ([2d3c408](https://github.com/kimyvgy/simple-scrollspy/commit/2d3c4088cb4c4fcaed175c8e1f1740534533ad9a))
+* the demo is not working in the localhost ([41cf4b3](https://github.com/kimyvgy/simple-scrollspy/commit/41cf4b335a65533a164a5030836bfb4585249f83))
 
 ## [2.0.3](https://github.com/kimyvgy/simple-scrollspy/compare/2.0.2...2.0.3) (2019-09-26)
 
