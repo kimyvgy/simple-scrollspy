@@ -6,6 +6,12 @@ html, body {
     color: #333333;
 }
 
+.scroll-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
 .navbar {
     position: fixed;
     top: 0;
