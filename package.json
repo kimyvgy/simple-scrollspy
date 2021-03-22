@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
-    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"
+    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules",
+    "release": "standard-version"
   },
   "repository": {
     "url": "https://github.com/kimyvgy/simple-scrollspy"
@@ -22,6 +23,7 @@
   },
   "homepage": "https://kimyvgy.github.io/simple-scrollspy/demo",
   "devDependencies": {
+    "standard-version": "^9.1.1",
     "terser-webpack-plugin": "^2.3.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^3.3.10"
