@@ -105,7 +105,7 @@ The `dist` folder is automatically created and include file `simple-scrollspy.mi
 
 ## Note
 - Feel free to make a pull request if you can, and create a Github issue if you come across one.
-- Don't forget give a star if you feel that the library is helpful to you. It may save somebody a lot of trouble some day.
+- Don't forget to give a star if you feel that the library is helpful to you. It may save somebody a lot of trouble some day.
 
 ## Helpful links
 - [Documentation](https://kimyvgy.github.io/simple-scrollspy)
