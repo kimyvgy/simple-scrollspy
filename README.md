@@ -104,8 +104,8 @@ $ npm run build
 The `dist` folder is automatically created and include file `simple-scrollspy.min.js`
 
 ## Note
-- Let feel free to make a pull request if you can. Or just create the issues when you got it.
-- Don't forget give it a star if you feels it is really helpfull for us. It may save somebody in someday.
+- Feel free to make a pull request if you can, and create a Github issue if you come across one.
+- Don't forget to give a star if you feel that the library is helpful to you. It may save somebody a lot of trouble some day.
 
 ## Helpful links
 - [Documentation](https://kimyvgy.github.io/simple-scrollspy)
