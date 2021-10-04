@@ -4,7 +4,7 @@
 
 [Simple scrollspy](https://kimyvgy.github.io/simple-scrollspy) is a lightweight javascript library without jQuery,
 no dependencies. It is used to make scrollspy effect for your menu, table of contents, etc.
-Only 1.94Kb.
+Only 1.4Kb.
 
 This is a [scrollspy demo](https://kimyvgy.github.io/simple-scrollspy/demo) for my menu in the navigation bar.
 
@@ -62,10 +62,10 @@ You also replace `href` with the other name by `hrefAttribute` in `options`.
 import scrollSpy from 'simple-scrollspy'
 
 const options = {
-    sectionClass: '.scrollspy',           // Query selector to your sections
-    menuActiveTarget: '.menu-item',       // Query selector to your elements that will be added `active` class
-    offset: 100,                          // Menu item will active before scroll to a matched section 100px
-    scrollContainer: '.scroll-container', // Listen scroll behavior on `.scroll-container` instead of `window`
+  sectionClass: '.scrollspy',           // Query selector to your sections
+  menuActiveTarget: '.menu-item',       // Query selector to your elements that will be added `active` class
+  offset: 100,                          // Menu item will active before scroll to a matched section 100px
+  scrollContainer: '.scroll-container', // Listen scroll behavior on `.scroll-container` instead of `window`
 }
 
 // init:
