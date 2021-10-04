@@ -50,8 +50,8 @@ You also replace `href` with the other name by `hrefAttribute` in `options`.
 | `offset`           | Number             | 0             | Offset number                      |
 | `hrefAttribute`    | String             | `href`        | The menu item's attribute name which contains section ID |
 | `activeClass`      | String             | `active`      | Active class name will be added into `menuActiveTarget`|
-| `scrollContainer`  | String|HTMLElement | empty string  | User Defined Scrolling Container |
-| `smoothScroll`  | Boolean|Object | `false`  | Enable the smooth scrolling feature |
+| `scrollContainer`  | String, HTMLElement | empty string  | User Defined Scrolling Container |
+| `smoothScroll`  | Boolean, Object | `false`  | Enable the smooth scrolling feature |
 | `smoothScrollBehavior`  | Function | `undefined`  | Define your smooth scroll behavior |
 
 ### ES6 example
@@ -83,10 +83,11 @@ scrollSpy('#main-menu', options)
       sectionClass: '.scrollspy',
       menuActiveTarget: '.menu-item',
       offset: 100,
+      // smooth scroll
       smoothScroll: true,
       smoothScrollBehavior: function(element) {
-        console.log('run smoothScrollBehavior', element)
-        element.scrollIntoView({ behavior: 'smooth' })
+        console.log('run "smoothScrollBehavior"...', element)
+        element.scrollIntoView({ behavior: 'smooth' }) // default behavior
       }
     })
   }
