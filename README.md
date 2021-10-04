@@ -1,5 +1,7 @@
 # Simple Scrollspy
 
+[![NPM version](https://img.shields.io/npm/v/simple-scrollspy.svg)](https://www.npmjs.com/package/simple-scrollspy)
+
 [Simple scrollspy](https://kimyvgy.github.io/simple-scrollspy) is a lightweight javascript library without jQuery,
 no dependencies. It is used to make scrollspy effect for your menu, table of contents, etc.
 Only 1.94Kb.
