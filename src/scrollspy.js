@@ -15,7 +15,10 @@ export class ScrollSpy {
       hrefAttribute: 'href',
       activeClass: 'active',
       scrollContainer: '',
+      smoothScroll: {},
     }
+
+    options.smoothScroll = options.smoothScroll === true && {} || options.smoothScroll
 
     this.menuList = menu instanceof HTMLElement ? menu : document.querySelector(menu)
     this.options = Object.assign({}, defaultOptions, options)
@@ -28,12 +31,30 @@ export class ScrollSpy {
 
     this.sections = document.querySelectorAll(this.options.sectionClass)
 
-    this.listen()
+    this.attachEventListeners()
   }
 
-  listen() {
+  attachEventListeners() {
     if (this.scroller) {
       this.scroller.addEventListener('scroll', () => this.onScroll())
+
+      // smooth scroll
+      if (this.options.smoothScroll) {
+        const menuItems = this.menuList.querySelectorAll(this.options.menuActiveTarget)
+        menuItems.forEach((item) => item.addEventListener('click', this.onClick.bind(this)))
+      }
+    }
+  }
+
+  onClick(event) {
+    const targetSelector = event.target.getAttribute(this.options.hrefAttribute)
+    const targetElement = document.querySelector(targetSelector)
+
+    if (targetElement && this.options.smoothScroll) {
+      // prevent click event
+      event.preventDefault()
+      // handle smooth scrolling to 'targetElement'
+      this.scrollTo(targetElement)
     }
   }
 
@@ -44,6 +65,19 @@ export class ScrollSpy {
     if (menuItem) {
       this.removeCurrentActive({ ignore: menuItem })
       this.setActive(menuItem)
+    }
+  }
+
+  scrollTo(targetElement) {
+    const smoothScrollBehavior = typeof this.options.smoothScrollBehavior === 'function' && this.options.smoothScrollBehavior
+
+    if (smoothScrollBehavior) {
+      smoothScrollBehavior(targetElement, this.options.smoothScroll)
+    } else {
+      targetElement.scrollIntoView({
+        ...this.options.smoothScroll,
+        behavior: 'smooth',
+      })
     }
   }
 

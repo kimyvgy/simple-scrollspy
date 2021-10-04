@@ -76,14 +76,44 @@ scrollSpy('#main-menu', options)
 ```html
 <script src="/path/to/dist/simple-scrollspy.min.js"></script>
 <script>
-    window.onload = function () {
-        scrollSpy('#main-menu', {
-            sectionClass: '.scrollspy',
-            menuActiveTarget: '.menu-item',
-            offset: 100,
-        })
-    }
+  window.onload = function () {
+    scrollSpy('#main-menu', {
+      sectionClass: '.scrollspy',
+      menuActiveTarget: '.menu-item',
+      offset: 100,
+      smoothScroll: true,
+    })
+  }
 </script>
+```
+
+### Smooth scroll
+
+```javascript
+import jumpTo from 'jump.js'
+
+scrollSpy('#main-menu', {
+  // ....,
+
+  // enable smooth scroll:
+  // - true: enable with the default scroll behavior
+  // - false: disable this feature
+  // - object: enable with some options that will pass to `window.scroll` or `smoothScrollBehavior`
+  //   + Default behavior: https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll
+  //   + Jump.js: https://www.npmjs.com/package/jump.js
+  smoothScroll: {
+    duration: 1000, // only works with jump.js,
+    offset: -100,   // only works with jump.js,
+  },
+
+  // customize scroll behavior,
+  // - default: window.scroll({ behavior: 'smooth', ...smoothScroll })
+  // - customize: you can define your scroll behavior. Ex: use `jump.js`, jQuery, .etc
+  smoothScrollBehavior: function(element, options) {
+    // use `jump.js` instead of the default scroll behavior
+    jumpTo(element, options)
+  }
+})
 ```
 
 ## Development
