@@ -56,6 +56,12 @@
         menuActiveTarget: '.menu-item',
         offset: 100,
         scrollContainer: '.scroll-container',
+        // smooth scroll
+        smoothScroll: true,
+        smoothScrollBehavior: function(element) {
+          console.log('run "smoothScrollBehavior"...', element)
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
       })
     }
   </script>

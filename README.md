@@ -51,6 +51,8 @@ You also replace `href` with the other name by `hrefAttribute` in `options`.
 | `hrefAttribute`    | String             | `href`        | The menu item's attribute name which contains section ID |
 | `activeClass`      | String             | `active`      | Active class name will be added into `menuActiveTarget`|
 | `scrollContainer`  | String|HTMLElement | empty string  | User Defined Scrolling Container |
+| `smoothScroll`  | Boolean|Object | `false`  | Enable the smooth scrolling feature |
+| `smoothScrollBehavior`  | Function | `undefined`  | Define your smooth scroll behavior |
 
 ### ES6 example
 
@@ -76,14 +78,48 @@ scrollSpy('#main-menu', options)
 ```html
 <script src="/path/to/dist/simple-scrollspy.min.js"></script>
 <script>
-    window.onload = function () {
-        scrollSpy('#main-menu', {
-            sectionClass: '.scrollspy',
-            menuActiveTarget: '.menu-item',
-            offset: 100,
-        })
-    }
+  window.onload = function () {
+    scrollSpy('#main-menu', {
+      sectionClass: '.scrollspy',
+      menuActiveTarget: '.menu-item',
+      offset: 100,
+      smoothScroll: true,
+      smoothScrollBehavior: function(element) {
+        console.log('run smoothScrollBehavior', element)
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    })
+  }
 </script>
+```
+
+### Smooth scroll
+
+```javascript
+import jumpTo from 'jump.js'
+
+scrollSpy('#main-menu', {
+  // ....,
+
+  // enable smooth scroll:
+  // - true: enable with the default scroll behavior
+  // - false: disable this feature
+  // - object: enable with some options that will pass to `Element.scrollIntoView` or `smoothScrollBehavior`
+  //   + Default behavior: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+  //   + Jump.js: https://www.npmjs.com/package/jump.js
+  smoothScroll: {
+    duration: 1000, // only works with jump.js,
+    offset: -100,   // only works with jump.js,
+  },
+
+  // customize scroll behavior,
+  // - default: Element.scrollIntoView({ ...smoothScroll, behavior: 'smooth' })
+  // - customize: you can define your scroll behavior. Ex: use `jump.js`, jQuery, .etc
+  smoothScrollBehavior: function(element, options) {
+    // use `jump.js` instead of the default scroll behavior
+    jumpTo(element, options)
+  }
+})
 ```
 
 ## Development
