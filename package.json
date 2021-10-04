@@ -27,5 +27,8 @@
     "terser-webpack-plugin": "^2.3.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^3.3.10"
+  },
+  "optionalDependencies": {
+    "jump.js": "^1.0.2"
   }
 }
