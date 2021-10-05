@@ -23,7 +23,7 @@ jobs:
     - name: Cache node_modules
       uses: actions/cache@v2
       env:
-        cache-name: cache-node-modules
+        cache-name: cache-node-modules-${{ matrix.node-version }}
       with:
         path: node_modules
         key: ${{ runner.os }}-build-${{ env.cache-name }}
