@@ -20,5 +20,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-    - run: yarn run build --if-present
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-build-${{ env.cache-name }}
+    - run: yarn install --frozen-lockfile
+    - run: yarn run build
