@@ -110,17 +110,17 @@ scrollSpy('#main-menu', {
   // - object: enable with some options that will pass to `Element.scrollIntoView` or `smoothScrollBehavior`
   //   + Default behavior: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
   //   + Jump.js: https://www.npmjs.com/package/jump.js
-  smoothScroll: {
-    duration: 1000, // only works with jump.js,
-    offset: -100,   // only works with jump.js,
-  },
+  smoothScroll: true,
 
   // customize scroll behavior,
   // - default: Element.scrollIntoView({ ...smoothScroll, behavior: 'smooth' })
   // - customize: you can define your scroll behavior. Ex: use `jump.js`, jQuery, .etc
   smoothScrollBehavior: function(element, options) {
     // use `jump.js` instead of the default scroll behavior
-    jumpTo(element, options)
+    jumpTo(element, {
+      duration: 1000,
+      offset: -100,
+    })
   }
 })
 ```
