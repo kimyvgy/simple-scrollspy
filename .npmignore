@@ -1,5 +1,3 @@
-index.html
-webpack.config.js
-_config.yml
-npm-debug.log
-yarn-error.log
+*
+!src
+!package.json
