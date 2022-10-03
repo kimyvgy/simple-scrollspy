@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/kimyvgy/simple-scrollspy/compare/v2.2.0...v2.3.0) (2022-10-03)
+
+
+### Features
+
+* upgrade to webpack v5 ([2704961](https://github.com/kimyvgy/simple-scrollspy/commit/27049619dbb04f42a7a054b87d39be103dff07c9))
+
+
+### Refactors
+
+* CI with Github Actions ([#27](https://github.com/kimyvgy/simple-scrollspy/issues/27)) ([415daad](https://github.com/kimyvgy/simple-scrollspy/commit/415daaddfbf6487e2435ca6953e767496024cdbf))
+
 ## [2.1.0](https://github.com/kimyvgy/simple-scrollspy/compare/v2.0.3...v2.1.0) (2021-03-22)
 
 
