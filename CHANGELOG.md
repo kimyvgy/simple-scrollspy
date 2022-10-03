@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/kimyvgy/simple-scrollspy/compare/v2.3.1...v2.3.2) (2022-10-03)
+
+
+### Bug Fixes
+
+* .npmignore does not publish /src/scrollspy.js ([e9c67ca](https://github.com/kimyvgy/simple-scrollspy/commit/e9c67caba25fda812245d74ff9cf1a04a2b4b9a2))
+
 ### [2.3.1](https://github.com/kimyvgy/simple-scrollspy/compare/v2.3.0...v2.3.1) (2022-10-03)
 
 
