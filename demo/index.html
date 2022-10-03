@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -9,62 +8,59 @@
   <title>Simple Scrollspy</title>
   <link rel="stylesheet" href="demo.css">
 </head>
-
 <body>
-
-  <div class="scroll-container">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <h1>
-            <a href="">Simple Scrollspy</a>
-          </h1>
-        </div>
-
-        <div class="menu" id="main-menu">
-          <a class="menu-item active" href="#hero">Hero</a>
-          <a class="menu-item" href="#section-1">Section 1</a>
-          <a class="menu-item" href="#section-2">Section 2</a>
-          <a class="menu-item" href="#section-3">Section 3</a>
-          <a class="menu-item" href="#section-4">Section 4</a>
-        </div>
+<div class="app">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <h1>
+          <a href="">Simple Scrollspy</a>
+        </h1>
       </div>
-    </nav>
 
-    <section class="section scrollspy" id="hero">Hero</section>
-    <section class="section scrollspy" id="section-1">Section 1</section>
-    <section class="section scrollspy" id="section-2">Section 2</section>
-    <section class="section scrollspy" id="section-3">Section 3</section>
-    <section class="section scrollspy" id="section-4">Section 4</section>
-
-    <footer class="footer">
-      <div class="container">
-        <p>
-          <a href="https://github.com/huukimit/simple-scrollspy" title="Fork me on Github">
-            Simple Scrollspy - Github
-          </a>
-        </p>
+      <div class="menu" id="main-menu">
+        <a class="menu-item active" href="#hero">Hero</a>
+        <a class="menu-item" href="#section-1">Section 1</a>
+        <a class="menu-item" href="#section-2">Section 2</a>
+        <a class="menu-item" href="#section-3">Section 3</a>
+        <a class="menu-item" href="#section-4">Section 4</a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </nav>
 
-  <script src="dist/simple-scrollspy.min.js"></script>
-  <script>
-    window.onload = function () {
-      scrollSpy('#main-menu', {
-        sectionClass: '.scrollspy',
-        menuActiveTarget: '.menu-item',
-        offset: 100,
-        scrollContainer: '.scroll-container',
-        // smooth scroll
-        smoothScroll: true,
-        smoothScrollBehavior: function(element) {
-          console.log('run "smoothScrollBehavior"...', element)
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
-      })
-    }
-  </script>
+  <section class="section scrollspy" id="hero">Hero</section>
+  <section class="section scrollspy" id="section-1">Section 1</section>
+  <section class="section scrollspy" id="section-2">Section 2</section>
+  <section class="section scrollspy" id="section-3">Section 3</section>
+  <section class="section scrollspy" id="section-4">Section 4</section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <a href="https://github.com/huukimit/simple-scrollspy" title="Fork me on Github">
+          Simple Scrollspy - Github
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+
+<script async src="dist/simple-scrollspy.min.js"></script>
+<script defer>
+  window.onload = function () {
+    scrollSpy('#main-menu', {
+      sectionClass: '.scrollspy',
+      menuActiveTarget: '.menu-item',
+      offset: 100,
+      // scrollContainer: null,
+      // smooth scroll
+      smoothScroll: true,
+      smoothScrollBehavior: function(element) {
+        console.log('run "smoothScrollBehavior"...', element)
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    })
+  }
+</script>
 </body>
-
 </html>
