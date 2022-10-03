@@ -4,8 +4,8 @@
   "description": "Simple scrollspy javascript without jQuery, no dependencies.",
   "main": "src/index.js",
   "scripts": {
-    "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
-    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules",
+    "dev": "webpack --mode production --watch --progress",
+    "build": "webpack --mode production --progress",
     "release": "standard-version"
   },
   "repository": {
@@ -24,9 +24,9 @@
   "homepage": "https://kimyvgy.github.io/simple-scrollspy/demo",
   "devDependencies": {
     "standard-version": "^9.1.1",
-    "terser-webpack-plugin": "^2.3.1",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^3.3.10"
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "optionalDependencies": {
     "jump.js": "^1.0.2"

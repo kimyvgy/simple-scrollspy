@@ -52,7 +52,7 @@ You also replace `href` with the other name by `hrefAttribute` in `options`.
 | `offset`           | Number             | 0             | Offset number                      |
 | `hrefAttribute`    | String             | `href`        | The menu item's attribute name which contains section ID |
 | `activeClass`      | String             | `active`      | Active class name will be added into `menuActiveTarget`|
-| `scrollContainer`  | String, HTMLElement | empty string  | User Defined Scrolling Container |
+| `scrollContainer`  | String, HTMLElement | `window`     | User Defined Scrolling Container |
 | `smoothScroll`  | Boolean, Object | `false`  | Enable the smooth scrolling feature |
 | `smoothScrollBehavior`  | Function | `undefined`  | Define your smooth scroll behavior |
 
