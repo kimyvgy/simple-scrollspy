@@ -1,0 +1,31 @@
+name: Publish to npmjs
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+        registry-url: 'https://registry.npmjs.org'
+    - name: ⎔ Cache node_modules
+      uses: actions/cache@v3
+      env:
+        cache-name: node_modules-16x
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-build-${{ env.cache-name }}
+    - name: 📥 Download deps
+      run: yarn install --frozen-lockfile
+    - name: ⎔ Build package
+      run: yarn build
+    - name: 🧶 Publish to npmjs
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
