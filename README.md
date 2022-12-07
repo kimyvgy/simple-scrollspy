@@ -146,6 +146,12 @@ The `dist` folder is automatically created and include file `simple-scrollspy.mi
 - Feel free to make a pull request if you can, and create a Github issue if you come across one.
 - Don't forget to give a star if you feel that the library is helpful to you. It may save somebody a lot of trouble some day.
 
+## Support the developers
+
+- [@kimyvgy](https://github.com/kimyvgy) - https://kimyvgy.webee.asia (Momo, Paypal, Buymeacoffee)
+
+<p align="center"><a href="https://kimyvgy.webee.asia" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" style="width: 200px !important"></a></p>
+
 ## Helpful links
 - [Documentation](https://kimyvgy.github.io/simple-scrollspy)
 - [Example](https://kimyvgy.github.io/simple-scrollspy/demo)
