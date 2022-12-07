@@ -150,7 +150,7 @@ The `dist` folder is automatically created and include file `simple-scrollspy.mi
 
 - [@kimyvgy](https://github.com/kimyvgy) - https://kimyvgy.webee.asia (Momo, Paypal, Buymeacoffee)
 
-<p align="center"><a href="https://kimyvgy.webee.asia" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" style="width: 200px !important"></a></p>
+<p align="left"><a href="https://kimyvgy.webee.asia" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" style="width: 200px !important"></a></p>
 
 ## Helpful links
 - [Documentation](https://kimyvgy.github.io/simple-scrollspy)
