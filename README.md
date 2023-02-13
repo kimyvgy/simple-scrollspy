@@ -23,6 +23,8 @@ npm install simple-scrollspy
 <script src="/path/to/dist/simple-scrollspy.min.js"></script>
 ```
 
+You can found `simple-scrollspy.min.js` file on each release. Please check [the latest version](https://github.com/kimyvgy/simple-scrollspy/releases/latest).
+
 ## Usages
 
 Easy for using, syntax just like this:
