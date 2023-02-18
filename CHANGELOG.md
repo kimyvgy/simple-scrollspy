@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.6](https://github.com/kimyvgy/simple-scrollspy/compare/v2.3.5...v2.3.6) (2023-02-18)
+
+
+### Bug Fixes
+
+* .npmignore /demo (2) ([01111e2](https://github.com/kimyvgy/simple-scrollspy/commit/01111e299e703064d12214423b875403c384a507))
+
 ### [2.3.5](https://github.com/kimyvgy/simple-scrollspy/compare/v2.3.4...v2.3.5) (2023-02-18)
 
 Support CDN.js by adding dist folder to NPM package. CDN.js will auto-fetch dist/simple-scrollspy.min.js for each new version
