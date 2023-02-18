@@ -1,6 +1,6 @@
 {
   "name": "simple-scrollspy",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Simple scrollspy javascript without jQuery, no dependencies.",
   "main": "src/index.js",
   "scripts": {
