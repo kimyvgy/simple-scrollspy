@@ -104,7 +104,12 @@ export class ScrollSpy {
 
   setActive(activeItem) {
     const isActive = activeItem.classList.contains(this.options.activeClass)
-    if (!isActive) activeItem.classList.add(this.options.activeClass)
+    if (!isActive) {
+      activeItem.classList.add(this.options.activeClass)
+      if (typeof this.options.onActive === 'function') {
+        this.options.onActive(activeItem)
+      }
+    }
   }
 
   removeCurrentActive({ ignore }) {

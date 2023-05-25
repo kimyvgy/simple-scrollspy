@@ -58,6 +58,9 @@
       smoothScrollBehavior: function(element) {
         console.log('run "smoothScrollBehavior"...', element)
         element.scrollIntoView({ behavior: 'smooth' })
+      },
+      onActive: (el) => {
+        console.log('run "onActive"...', el)
       }
     })
   }
