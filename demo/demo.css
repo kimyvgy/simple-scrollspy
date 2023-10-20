@@ -28,7 +28,7 @@ html, body {
 
 .navbar-brand a {
   text-decoration: none;
-  color: #0097e6;
+  color: #0ca2f3;
 }
 
 .navbar .container {
@@ -51,11 +51,11 @@ html, body {
 }
 
 .menu-item:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(2, 2, 2, 0.1);
 }
 
 .menu-item.active {
-  background: #00a8ff;
+  background: #03a8fa;
   color: #ffffff;
 }
 
@@ -76,19 +76,19 @@ html, body {
 
 .section:nth-child(3) {
   background: #ffffff;
-  color: #333333;
+  color: #333232;
 }
 
 .section:nth-child(4) {
-  background: linear-gradient(#8c7ae6, #9c88ff);
+  background: linear-gradient(#8e7ce4, #9783fc);
 }
 
 .section:nth-child(5) {
-  background: linear-gradient(#e1b12c, #fbc531);
+  background: linear-gradient(#e6b530, #f7c12d);
 }
 
 .section:nth-child(6) {
-  background: linear-gradient(#40739e, #487eb0);
+  background: linear-gradient(#407199, #457caf);
 }
 
 .footer {
