@@ -1,11 +1,11 @@
 export class ScrollSpy {
   constructor(menu, options = {}) {
     if (!menu) {
-      throw new Error('First argument is query selector to your navigation.')
+      throw new Error('Your navigation query selector is the first argument.')
     }
 
     if (typeof options !== 'object') {
-      throw new Error('Second argument must be instance of Object.')
+      throw new Error('The second argument must be an instance of an Object.')
     }
 
     let defaultOptions = {
