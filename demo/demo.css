@@ -48,6 +48,7 @@ html, body {
   text-decoration: none;
   padding: 1rem;
   color: inherit;
+  border-radius: 5px;
 }
 
 .menu-item:hover {
