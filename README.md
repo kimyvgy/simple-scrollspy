@@ -36,7 +36,7 @@ If you are giving it a try, make sure that you:
 1. Added CSS for `active` class in your menu item. Because this plugin doesn't include CSS.
 2. Added ID for your sections.
     Example: `<section id="first-section">...</section>`
-3. Added an attribute which is a section ID into your menu items. The default value is `href``.
+3. Added an attribute which is a section ID into your menu items. The default value is `href`.
     Example: `"href"="#first-section"`.
 You also replace `href` with the other name by `hrefAttribute` in `options`.
 
