@@ -1,6 +1,7 @@
 name: Publish to npmjs
 
 on:
+  workflow_dispatch:
   release:
     types: [created]
 
