@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.2](https://github.com/kimyvgy/simple-scrollspy/compare/v2.4.1...v2.4.2) (2023-12-13)
+
+
+### Bug Fixes
+
+* Type definition of Options.scrollContainer ([19251a0](https://github.com/kimyvgy/simple-scrollspy/commit/19251a0eaed870da6ad96a1bae81bcb1900e0ecd))
+
+
+### Refactors
+
+* Add prerelease hook ([2f7fa63](https://github.com/kimyvgy/simple-scrollspy/commit/2f7fa631fed32d23f70884a45a82270c4487b767))
+
 ### [2.3.6](https://github.com/kimyvgy/simple-scrollspy/compare/v2.3.5...v2.3.6) (2023-02-18)
 
 
