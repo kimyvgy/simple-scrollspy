@@ -9,7 +9,7 @@ declare module 'simple-scrollspy' {
         offset: number;
         hrefAttribute: string;
         activeClass: string;
-        scrollContainer: string;
+        scrollContainer: string | HTMLElement;
         smoothScroll: SmoothScroll,
         smoothScrollBehavior?: (targetElement: HTMLElement, smoothScrollOptions: SmoothScroll) => void;
         onActive?: (activeItem: HTMLElement) => void;
