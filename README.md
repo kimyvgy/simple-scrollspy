@@ -7,7 +7,8 @@
 This is a [scrollspy demo](https://kimyvgy.github.io/simple-scrollspy/demo) for my menu in the navigation bar.
 
 ## Install
-1. Via NPM:
+
+### Using NPM package
 
 Install NPM package - https://www.npmjs.com/package/simple-scrollspy:
 
@@ -15,13 +16,24 @@ Install NPM package - https://www.npmjs.com/package/simple-scrollspy:
 npm install simple-scrollspy
 ```
 
-2. The other way, you also can inject `simple-scrollspy.min.js` file into your HTML code:
+### Using CDNjs
+
+The `simple-scrollspy` is already on CDNjs. Therefore, you can:
+1. Go to https://cdnjs.com/libraries/simple-scrollspy
+2. Choose a version
+3. Click `Copy Script Tag`, CDNjs will generate the script and copy them to your clipboard. For example:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.1/simple-scrollspy.min.js" integrity="sha512-NNb5TgmE+7PHedvAWwPKZ/ukCGJciTHZ23ghPriEeEfcGySDBm9zIrjaXp/WNAUcVYhi5XhJ1rHveDKR35CInw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+### Using `simple-scrollspy.min.js` file
+
+You can download `simple-scrollspy.min.js` file on each release. Please check [the latest version](https://github.com/kimyvgy/simple-scrollspy/releases/latest).
 
 ```html
 <script src="/path/to/dist/simple-scrollspy.min.js"></script>
 ```
-
-You can found `simple-scrollspy.min.js` file on each release. Please check [the latest version](https://github.com/kimyvgy/simple-scrollspy/releases/latest).
 
 ## Usages
 
