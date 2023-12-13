@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack --mode production --watch --progress",
     "build": "webpack --mode production --progress",
+    "prerelease": "npm run build && git add . && git commit -m 'release: Update /dist folder' || true",
     "release": "standard-version"
   },
   "repository": {
