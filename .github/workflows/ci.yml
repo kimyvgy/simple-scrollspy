@@ -1,0 +1,27 @@
+name: CI tests
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  ci-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        registry-url: 'https://registry.npmjs.org'
+    - name: ⎔ Cache node_modules
+      uses: actions/cache@v3
+      env:
+        cache-name: node_modules-20x
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-build-${{ env.cache-name }}
+    - name: 📥 Download deps
+      run: yarn install --frozen-lockfile
+    - name: ⎔ Build package
+      run: yarn build
