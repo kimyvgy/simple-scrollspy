@@ -16,7 +16,7 @@ jobs:
         node-version: '16.x'
         registry-url: 'https://registry.npmjs.org'
     - name: ⎔ Cache node_modules
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       env:
         cache-name: node_modules-16x
       with:
