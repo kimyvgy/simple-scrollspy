@@ -91,6 +91,8 @@ export class ScrollSpy {
           this.removeCurrentActive({ ignore: menuItem })
           this.setActive(menuItem)
         }
+      } else {
+        this.removeCurrentActive({ ignore: null })
       }
     }
 
@@ -125,7 +127,10 @@ export class ScrollSpy {
         }
 
         const isInView = currentPosition > startAt && currentPosition <= endAt
-        if (isInView) return this.sections[i]
+        if (isInView) {
+          if (!startAt) return false
+          return this.sections[i]
+        }
       }
     }
 
@@ -139,10 +144,10 @@ export class ScrollSpy {
       }
     }
 
-    removeCurrentActive({ ignore }: { ignore: HTMLElement }) {
+    removeCurrentActive({ ignore }: { ignore: HTMLElement | null }) {
       if (this.menuList) {
         const { hrefAttribute, menuActiveTarget, activeClass } = this.options
-        const items = `${menuActiveTarget}.${activeClass}:not([${hrefAttribute}="${ignore.getAttribute(hrefAttribute)}"])`
+        const items = ignore ? `${menuActiveTarget}.${activeClass}:not([${hrefAttribute}="${ignore.getAttribute(hrefAttribute)}"])` : `${menuActiveTarget}.${activeClass}`
         const menuItems = this.menuList.querySelectorAll(items)
 
         menuItems.forEach((item) => item.classList.remove(this.options.activeClass))
