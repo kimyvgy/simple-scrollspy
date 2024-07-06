@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/kimyvgy/simple-scrollspy/compare/v2.4.2...v2.5.0) (2024-07-06)
+
+
+### Features
+
+* Full conversion to TypeScript [#39](https://github.com/kimyvgy/simple-scrollspy/issues/39) ([#53](https://github.com/kimyvgy/simple-scrollspy/issues/53)) ([e6d7bc6](https://github.com/kimyvgy/simple-scrollspy/commit/e6d7bc6bf4c5aae4588a49551d591e17f28e2f1b))
+
+
+### Bug Fixes
+
+* the menu item's active status ([5c3b5c1](https://github.com/kimyvgy/simple-scrollspy/commit/5c3b5c154f8626afab1dd3b0aafe48a68b47291c))
+
 ### [2.4.2](https://github.com/kimyvgy/simple-scrollspy/compare/v2.4.1...v2.4.2) (2023-12-13)
 
 
