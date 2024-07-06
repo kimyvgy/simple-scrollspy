@@ -164,7 +164,7 @@ The `dist` folder is automatically created and includes the file `simple-scrolls
 ## Support / Donate
 
 <p align="center">
-  <a href="https://kimyvgy.webee.asia" target="_blank" title="Donate with: Paypal, Momo, Buymeacoffee">
+  <a href="https://paypal.me/kimyvgy" target="_blank" title="Donate with Paypal">
     <img src="https://user-images.githubusercontent.com/13513658/208368616-f20301e6-61d5-449b-aa87-5dda17b273b7.png">
   </a>
 </p>
