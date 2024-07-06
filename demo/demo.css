@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -21,9 +22,9 @@ html, body {
   background: #ffffff;
   overflow: hidden;
   z-index: 1000;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
-  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand a {
@@ -81,15 +82,20 @@ html, body {
 }
 
 .section:nth-child(4) {
-  background: linear-gradient(#8e7ce4, #9783fc);
+  background: #9783fc;
 }
 
 .section:nth-child(5) {
-  background: linear-gradient(#e6b530, #f7c12d);
+  background: #e6b530;
 }
 
 .section:nth-child(6) {
-  background: linear-gradient(#407199, #457caf);
+  background: #9333ea;
+}
+
+.section:nth-child(7) {
+  background: #ffffff;
+  color: #333232;
 }
 
 .footer {
