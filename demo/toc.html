@@ -70,7 +70,7 @@
         },
       };
     </script>
-    <title>Simple Scrollspy - Header With Navigation Bar Example</title>
+    <title>Simple Scrollspy - TOC Example</title>
   </head>
 
   <body>
@@ -89,9 +89,9 @@
           </a>
           <div class="flex items-center lg:order-2">
             <a
-              href="./toc.html"
+              href="./index.html"
               class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-              >Example 2</a
+              >Example 1</a
             >
             <a
               href="https://github.com/kimyvgy/simple-scrollspy"
@@ -100,76 +100,6 @@
               class="text-white bg-gray-800 hover:bg-black focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >GitHub</a
             >
-            <button
-              data-collapse-toggle="mobile-menu-2"
-              type="button"
-              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="mobile-menu-2"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <svg
-                class="hidden w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div
-            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-            id="mobile-menu-2"
-          >
-            <ul
-              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
-            >
-              <li>
-                <a
-                  href="#section-1"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Section 1</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#section-2"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Section 2</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#section-3"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Section 3</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#section-4"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >Section 4</a
-                >
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
@@ -256,151 +186,184 @@
       </div>
     </section>
 
-    <section
-      id="section-1"
-      class="scrollspy bg-white dark:bg-gray-900 min-h-[70vh] flex items-center"
-    >
-      <div
-        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+    <div class="grid grid-cols-12">
+      <article
+        class="col-span-9 prose prose-stone max-w-screen-md mx-auto mb-40"
       >
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-          >
-            We didn't reinvent the wheel
+        <section class="scrollspy" id="section-1">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 1: Lorem ipsum dolor sit amet consectetur.
           </h2>
-          <p class="mb-4">
-            We are strategists, designers and developers. Innovators and problem
-            solvers. Small enough to be simple and quick, but big enough to
-            deliver the scope you want at the pace you need. Small enough to be
-            simple and quick, but big enough to deliver the scope you want at
-            the pace you need.
-          </p>
-          <p>
-            We are strategists, designers and developers. Innovators and
-            problem¡ solvers. Small enough to be simple and quick.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img
-            class="w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-            alt="office content 1"
-          />
-          <img
-            class="mt-4 w-full lg:mt-10 rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-            alt="office content 2"
-          />
-        </div>
-      </div>
-    </section>
 
-    <section
-      id="section-2"
-      class="scrollspy bg-white dark:bg-gray-900 min-h-[70vh] flex items-center"
-    >
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-          >
-            Let's find more that brings us together.
-          </h2>
-          <p
-            class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400"
-          >
-            Flowbite helps you connect with friends, family and communities of
-            people who share your interests. Connecting with your friends and
-            family as well as discovering new ones is easy with features like
-            Groups, Watch and Marketplace.
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quas distinctio porro aut, id quae quisquam ut esse in vel minima
+            repudiandae labore, sunt laboriosam, quis tenetur ex impedit?
+            Inventore in, ipsa dolorum libero repellendus, quos sequi rerum fuga
+            earum, aspernatur quis distinctio. Voluptate rerum harum corporis
+            voluptatem porro eaque repellendus nostrum? Sequi dolorum a,
+            laudantium laboriosam nostrum dignissimos ex! Obcaecati, quam.
           </p>
-          <div
-            class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
-          >
-            <a
-              href="javascript:void(0)"
-              class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
-              Get started
+
+          <p class="my-4">
+            At dolores debitis nihil sint quisquam modi, beatae neque laudantium
+            perspiciatis officiis accusantium cupiditate adipisci explicabo quae
+            excepturi, hic cum recusandae eveniet fugiat obcaecati. Modi,
+            tempore commodi? Beatae veniam aliquam ipsum quis nulla odit rerum
+            itaque quae dicta? Autem, deserunt aut id quas est, eaque veniam
+            voluptatibus odit debitis nemo doloremque. Omnis facere cum soluta
+            est pariatur obcaecati labore sunt voluptate optio suscipit tenetur,
+            culpa nesciunt earum perferendis modi dolore provident fugiat
+            delectus nihil eveniet cumque ipsam qui?
+          </p>
+        </section>
+
+        <section class="scrollspy" id="section-2">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 2: Lorem, ipsum dolor.
+          </h2>
+
+          <p class="my-4">
+            Iusto, magni qui hic molestiae nulla unde, maiores dolore eveniet
+            assumenda distinctio non recusandae dicta laboriosam porro et
+            aperiam corporis odio quo. Maiores, exercitationem consequuntur,
+            porro fuga omnis impedit sint sit tempora quia voluptatum molestias
+            itaque. Dignissimos facere nostrum voluptatum odio non esse expedita
+            rerum veniam voluptatem nulla officia, beatae dolor similique
+            deserunt, accusantium quam debitis quos excepturi et magnam
+            reiciendis placeat modi aliquid!
+          </p>
+
+          <p class="my-4">
+            Corrupti magni cupiditate quibusdam possimus reiciendis architecto
+            nobis minus numquam, aut suscipit mollitia impedit optio nostrum
+            adipisci a rerum cumque! Odio dicta provident et delectus quidem?
+            Cupiditate nisi voluptatem est ex alias at adipisci nemo dicta fuga
+            reiciendis a ullam saepe dolorum porro doloremque culpa officiis,
+            cumque non incidunt? Molestiae, quam. Debitis, in quos.
+          </p>
+        </section>
+
+        <section class="scrollspy" id="section-3">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 3: Lorem ipsum dolor sit amet consectetur.
+          </h2>
+
+          <p class="my-4">
+            Aut odio animi provident et sapiente beatae sed rerum porro. Libero
+            repudiandae quia eos nam voluptates mollitia quis ex tempora,
+            aliquid magnam consequatur recusandae saepe dignissimos et sit vel
+            ad rerum incidunt beatae magni reiciendis aliquam fugit praesentium.
+            Ducimus magni magnam veritatis?
+          </p>
+        </section>
+
+        <section class="scrollspy" id="section-4">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 4: Lorem ipsum dolor sit amet consectetur.
+          </h2>
+
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quas distinctio porro aut, id quae quisquam ut esse in vel minima
+            repudiandae labore, sunt laboriosam, quis tenetur ex impedit?
+            Inventore in, ipsa dolorum libero repellendus, quos sequi rerum fuga
+            earum, aspernatur quis distinctio. Voluptate rerum harum corporis
+            voluptatem porro eaque repellendus nostrum? Sequi dolorum a,
+            laudantium laboriosam nostrum dignissimos ex! Obcaecati, quam.
+          </p>
+
+          <p class="my-4">
+            At dolores debitis nihil sint quisquam modi, beatae neque laudantium
+            perspiciatis officiis accusantium cupiditate adipisci explicabo quae
+            excepturi, hic cum recusandae eveniet fugiat obcaecati. Modi,
+            tempore commodi? Beatae veniam aliquam ipsum quis nulla odit rerum
+            itaque quae dicta? Autem, deserunt aut id quas est, eaque veniam
+            voluptatibus odit debitis nemo doloremque. Omnis facere cum soluta
+            est pariatur obcaecati labore sunt voluptate optio suscipit tenetur,
+            culpa nesciunt earum perferendis modi dolore provident fugiat
+            delectus nihil eveniet cumque ipsam qui?
+          </p>
+        </section>
+
+        <section class="scrollspy" id="section-5">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 5: Lorem, ipsum dolor.
+          </h2>
+
+          <p class="my-4">
+            Iusto, magni qui hic molestiae nulla unde, maiores dolore eveniet
+            assumenda distinctio non recusandae dicta laboriosam porro et
+            aperiam corporis odio quo. Maiores, exercitationem consequuntur,
+            porro fuga omnis impedit sint sit tempora quia voluptatum molestias
+            itaque. Dignissimos facere nostrum voluptatum odio non esse expedita
+            rerum veniam voluptatem nulla officia, beatae dolor similique
+            deserunt, accusantium quam debitis quos excepturi et magnam
+            reiciendis placeat modi aliquid!
+          </p>
+
+          <p class="my-4">
+            Corrupti magni cupiditate quibusdam possimus reiciendis architecto
+            nobis minus numquam, aut suscipit mollitia impedit optio nostrum
+            adipisci a rerum cumque! Odio dicta provident et delectus quidem?
+            Cupiditate nisi voluptatem est ex alias at adipisci nemo dicta fuga
+            reiciendis a ullam saepe dolorum porro doloremque culpa officiis,
+            cumque non incidunt? Molestiae, quam. Debitis, in quos.
+          </p>
+        </section>
+
+        <section class="scrollspy" id="section-6">
+          <h2 class="font-bold text-primary-700 my-4 text-xl">
+            Section 6: Lorem ipsum dolor sit amet consectetur.
+          </h2>
+
+          <p class="my-4">
+            Aut odio animi provident et sapiente beatae sed rerum porro. Libero
+            repudiandae quia eos nam voluptates mollitia quis ex tempora,
+            aliquid magnam consequatur recusandae saepe dignissimos et sit vel
+            ad rerum incidunt beatae magni reiciendis aliquam fugit praesentium.
+            Ducimus magni magnam veritatis?
+          </p>
+        </section>
+      </article>
+
+      <div class="self-start sticky top-[7rem] col-span-3 py-6">
+        <div class="font-semibold uppercase text-gray-700 text-sm mb-8">
+          On this page
+        </div>
+
+        <ul class="list" id="toc-menu">
+          <li class="my-4 text-sm">
+            <a href="#section-1"
+              >Section 1: Lorem ipsum dolor sit amet consectetur.
             </a>
-            <a
-              href="javascript:void(0)"
-              class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            >
-              <svg
-                class="mr-2 -ml-1 w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
-                ></path>
-              </svg>
-              View more
+          </li>
+          <li class="my-4 text-sm">
+            <a href="#section-2">Section 2: Lorem, ipsum dolor. </a>
+          </li>
+          <li class="my-4 text-sm">
+            <a href="#section-3"
+              >Section 3: Lorem ipsum dolor sit amet consectetur.
             </a>
-          </div>
-        </div>
+          </li>
+          <li class="my-4 text-sm">
+            <a href="#section-4"
+              >Section 4: Lorem ipsum dolor sit amet consectetur.
+            </a>
+          </li>
+          <li class="my-4 text-sm">
+            <a href="#section-5">Section 5: Lorem, ipsum dolor. </a>
+          </li>
+          <li class="my-4 text-sm">
+            <a href="#section-6"
+              >Section 6: Lorem ipsum dolor sit amet consectetur.
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
 
-    <section
-      id="section-3"
-      class="scrollspy bg-white dark:bg-gray-900 min-h-[70vh] flex items-center"
-    >
-      <div
-        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
-      >
-        <img
-          class="w-full dark:hidden"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image"
-        />
-        <img
-          class="w-full hidden dark:block"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
-          alt="dashboard image"
-        />
-        <div class="mt-4 md:mt-0">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-          >
-            Let's create more tools and ideas that brings us together.
-          </h2>
-          <p
-            class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
-          >
-            Flowbite helps you connect with friends and communities of people
-            who share your interests. Connecting with your friends and family as
-            well as discovering new ones is easy with features like Groups.
-          </p>
-          <a
-            href="javascript:void(0)"
-            class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
-          >
-            Get started
-            <svg
-              class="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="section-4"
-      class="scrollspy bg-white dark:bg-gray-900 min-h-[70vh] flex items-center"
-    >
+    <section class="bg-white dark:bg-gray-900 min-h-[70vh] flex items-center">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
           <h2
@@ -477,7 +440,7 @@
     <script async src="dist/simple-scrollspy.min.js"></script>
     <script defer>
       window.onload = function () {
-        scrollSpy("#mobile-menu-2", {
+        scrollSpy("#toc-menu", {
           sectionClass: ".scrollspy",
           menuActiveTarget: "li > a.block",
           offset: 100,

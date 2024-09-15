@@ -5,8 +5,8 @@
 [Simple scrollspy](https://kimyvgy.github.io/simple-scrollspy) is a lightweight javascript library without jQuery, no dependencies. It is used to make scrollspy effect for your menu, table of contents, etc. Only 1.4Kb.
 
 Examples:
-- [Demo 1](https://kimyvgy.github.io/simple-scrollspy/demo)
-- [Demo 2](https://kimyvgy.github.io/simple-scrollspy/demo/2.html)
+- [Header With Navigation Bar](https://kimyvgy.github.io/simple-scrollspy/demo)
+- [Table Of Contents](https://kimyvgy.github.io/simple-scrollspy/demo/toc.html)
 
 ## Install
 
