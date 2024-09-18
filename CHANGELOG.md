@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.5.1](https://github.com/kimyvgy/simple-scrollspy/compare/v2.5.0...v2.5.1) (2024-09-18)
+
+
+### Bug Fixes
+
+* v2.5.0 breaks implementation with headings ([48cd9a2](https://github.com/kimyvgy/simple-scrollspy/commit/48cd9a270a2d9445be59190baffd3eff868950f9)), closes [#59](https://github.com/kimyvgy/simple-scrollspy/issues/59)
+
 ## [2.5.0](https://github.com/kimyvgy/simple-scrollspy/compare/v2.4.2...v2.5.0) (2024-07-06)
 
 
