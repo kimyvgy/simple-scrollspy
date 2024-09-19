@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.5.3](https://github.com/kimyvgy/simple-scrollspy/compare/v2.5.2...v2.5.3) (2024-09-19)
+
+
+### Bug Fixes
+
+* add the previously missing build output files in NPM package (2) ([44a192e](https://github.com/kimyvgy/simple-scrollspy/commit/44a192eb9a30f3fcb10a09de221f1d1becbc8a5f))
+
 ### [2.5.2](https://github.com/kimyvgy/simple-scrollspy/compare/v2.5.1...v2.5.2) (2024-09-18)
 
 
