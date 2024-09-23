@@ -18,20 +18,27 @@ Install NPM package - https://www.npmjs.com/package/simple-scrollspy:
 npm install simple-scrollspy
 ```
 
-### Using CDNjs
+### Using CDN
 
-The `simple-scrollspy` is already on CDNjs. Therefore, you can:
-1. Go to https://cdnjs.com/libraries/simple-scrollspy
-2. Choose a version
-3. Click `Copy Script Tag`, CDNjs will generate the script and copy them to your clipboard. For example:
+#### cdnjs
+
+The `simple-scrollspy` library is available on [cdnjs](https://cdnjs.com/libraries/simple-scrollspy). For instance:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.1/simple-scrollspy.min.js" integrity="sha512-NNb5TgmE+7PHedvAWwPKZ/ukCGJciTHZ23ghPriEeEfcGySDBm9zIrjaXp/WNAUcVYhi5XhJ1rHveDKR35CInw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
+#### jsDelivr
+
+The `simple-scrollspy` can be installed using [jsDelivr](https://jsdelivr.com). For instance:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/simple-scrollspy@2.5.3/demo/dist/simple-scrollspy.min.js"></script>
+```
+
 ### Using `simple-scrollspy.min.js` file
 
-You can download `simple-scrollspy.min.js` file on each release. Please check [the latest version](https://github.com/kimyvgy/simple-scrollspy/releases/latest).
+The `simple-scrollspy.min.js` file is available for download with each release. To obtain the most recent version, please visit [the latest release page](https://github.com/kimyvgy/simple-scrollspy/releases/latest) on GitHub.
 
 ```html
 <script src="/path/to/dist/simple-scrollspy.min.js"></script>
